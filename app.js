@@ -4,6 +4,16 @@ const express = require('express');
 
 const app = express();
 
-const server = http.createServer(app);
+app.use((req, res, next) => {
+    console.log('In the middleware');
+    next();   // allows the request to continue to the next middleware in line
+});
 
-server.listen(3000);
+app.use((req, res, next) => {
+    console.log('In the next middleware');
+    res.send('<h1>Hello from express</h1>');
+});
+
+//const server = http.createServer(app);
+//server.listen(3000);
+app.listen(3000);   // replaces create server and listen line
