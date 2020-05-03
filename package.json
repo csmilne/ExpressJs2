@@ -1,0 +1,19 @@
+{
+  "name": "expressjs2",
+  "version": "1.0.0",
+  "description": "nodejs with express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csmilne/ExpressJs2.git"
+  },
+  "author": "Scott Milne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csmilne/ExpressJs2/issues"
+  },
+  "homepage": "https://github.com/csmilne/ExpressJs2#readme"
+}
