@@ -4,12 +4,12 @@ const express = require('express');
 
 const app = express();
 
-app.use((req, res, next) => {
-    console.log('In the middleware');
-    next();   // allows the request to continue to the next middleware in line
+app.use('/add-product',(req, res, next) => {
+    console.log('In add-product');
+    res.send('<h1>Hello add product page</h1>');
 });
 
-app.use((req, res, next) => {
+app.use('/',(req, res, next) => {
     console.log('In the next middleware');
     res.send('<h1>Hello from express</h1>');
 });
